@@ -35,5 +35,4 @@ export class PostListItemComponent implements OnInit {
     }
   }
 
-
 }

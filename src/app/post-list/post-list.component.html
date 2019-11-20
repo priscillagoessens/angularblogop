@@ -1,13 +1,11 @@
 <div class="row">
-        <div class="col-sm-6">
-
-<app-post-list-item *ngFor="let item of items" 
-                    [itemtitle]="item.title"
-                    [itemcontent]="item.content"
-                    [itemdate]="item.date"
-                    [itemloveIt]="item.loveIt"
-                    [itemimg]="item.img">
-                
-</app-post-list-item>
-</div>
+        <div class="col-sm-4">
+                <app-post-list-item *ngFor="let item of items" 
+                        [itemtitle]="item.title"
+                        [itemcontent]="item.content"
+                        [itemdate]="item.date"
+                        [itemloveIt]="item.loveIt"
+                        [itemimg]="item.img">
+                </app-post-list-item>
+        </div>
 </div>

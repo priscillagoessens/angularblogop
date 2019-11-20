@@ -45,6 +45,5 @@ export class PostListComponent implements OnInit {
     date:new Date,
     loveIt: 0,
     img:"../assets/img/Twd.jpg"
-  }
-]
+  }]
 }

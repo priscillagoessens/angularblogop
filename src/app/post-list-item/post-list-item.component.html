@@ -1,17 +1,19 @@
 
-    <div [ngClass]="{'card':true,
-                    'card text-white bg-success mb-3': getColor()=='green',
-                    'card text-white bg-danger mb-3': getColor()=='red'}">
-        <img src="{{itemimg}}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">{{itemtitle}}</h5>
-            <p class="card-text">Synopsis : {{itemcontent}}</p>
-            <p>Resulta : {{itemloveIt}}</p>
-            <button type="button" class="btn btn-outline-primary" (click)="addLove()">Love It!</button>
-            <button type="button" class="btn btn-outline-danger" (click)="removeLove()">Don't love It!</button>
-        </div>
-        <div class="card-footer">
-            <small class="text-muted">Vote modifié le {{itemdate | date:'short'}}</small>
-        </div>
+<div [ngClass]="{'card':true,
+                'card text-white bg-success mb-3': getColor()=='green',
+                'card text-white bg-danger mb-3': getColor()=='red'}">
+                
+    <img src="{{itemimg}}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{itemtitle}}</h5>
+        <p class="card-text">Synopsis : {{itemcontent}}</p>
+        <p>Resulta : {{itemloveIt}}</p>
+        <button type="button" class="btn btn-outline-primary" (click)="addLove()">Love It!</button>
+        <button type="button" class="btn btn-outline-danger" (click)="removeLove()">Don't love It!</button>
     </div>
+    <div class="card-footer">
+        <small class="text-muted">Vote modifié le {{itemdate | date:'short'}}</small>
+    </div>
+
+</div>
 
